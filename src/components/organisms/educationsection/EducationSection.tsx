@@ -10,7 +10,7 @@ export function EducationSection({ items }: EducationSectionProps) {
   return (
     <section
       id="education"
-      className="rounded-t-[20px] bg-linear-to-br from-surface-muted to-primary/35 px-19.5 py-14 text-text-primary max-lg:px-8 max-md:px-5"
+      className="rounded-t-[20px] to-primary/35 px-19.5 py-14  max-lg:px-8 max-md:px-5"
     >
       <div className="mx-auto grid max-w-7xl grid-cols-[190px_1fr] gap-10 max-lg:grid-cols-1">
         <ScrollReveal>
@@ -19,7 +19,7 @@ export function EducationSection({ items }: EducationSectionProps) {
             세강파트너스가 함께하는 혁신 기업을 소개합니다.
           </p>
           <a
-            className="mt-12 inline-flex min-w-38 items-center justify-center gap-3 rounded-[999px] border border-white/70 px-6 py-3 text-sm font-bold transition duration-300 hover:border-primary hover:bg-primary hover:shadow-[rgba(14,81,213,0.35)_0px_8px_20px_0px] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
+            className="mt-12 inline-flex min-w-38 items-center justify-center gap-3 rounded-[999px] border border-gray-400/70 px-6 py-3 text-sm font-bold transition duration-300 hover:border-primary hover:bg-primary hover:shadow-[rgba(14,81,213,0.35)_0px_8px_20px_0px] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
             href="#education"
           >
             자세히보기
