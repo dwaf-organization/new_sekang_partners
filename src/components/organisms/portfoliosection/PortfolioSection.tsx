@@ -1,54 +1,42 @@
-import { motion, useReducedMotion } from 'motion/react'
-
 import { ScrollReveal } from '@/components/atoms/scrollreveal/ScrollReveal'
-import { ShowcaseCard } from '@/components/molecules/showcasecard/ShowcaseCard'
-import type { ShowcaseItem } from '@/types/home.types'
+import { PortfolioProgramCard } from '@/components/molecules/portfolioprogramcard/PortfolioProgramCard'
+import type { PortfolioProgram } from '@/types/home.types'
 
 type PortfolioSectionProps = {
-  items: ShowcaseItem[]
+  programs: PortfolioProgram[]
 }
 
-export function PortfolioSection({ items }: PortfolioSectionProps) {
-  const shouldReduceMotion = useReducedMotion()
-  const scrollingItems = [...items, ...items]
-
+export function PortfolioSection({ programs }: PortfolioSectionProps) {
   return (
-    <section
-      id="portfolio"
-      className="rounded-t-[20px] bg-surface-muted px-19.5 py-14 text-text-primary max-lg:px-8 max-md:px-5"
-    >
-      <div className="mx-auto grid max-w-7xl grid-cols-[190px_1fr] gap-10 max-lg:grid-cols-1">
+    <section className=" px-8 py-28 text-text-inverse max-md:px-5 max-md:py-20">
+      <div className="mx-auto max-w-[1440px]">
         <ScrollReveal>
-          <h2 className="text-[30px] leading-10 font-black">포트폴리오</h2>
-          <p className="mt-4 text-lg leading-7 font-semibold text-text-primary/80">
-            세강파트너스가 함께하는 혁신 기업을 소개합니다.
-          </p>
-          <a
-            className="mt-12 inline-flex min-w-38 items-center justify-center gap-3 rounded-[999px] border border-white/70 px-6 py-3 text-sm font-bold transition duration-300 hover:border-primary hover:bg-primary hover:shadow-[rgba(14,81,213,0.35)_0px_8px_20px_0px] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
-            href="#portfolio"
-          >
-            자세히보기
-            <span aria-hidden="true">→</span>
-          </a>
+          <p className="text-xs font-black tracking-[0.28em] text-primary uppercase">Portfolio</p>
         </ScrollReveal>
+        <div className="mt-5 flex flex-wrap items-end justify-between gap-8">
+          <ScrollReveal delay={0.08}>
+            <h2 className="text-[48px] leading-[1.08] font-black max-md:text-[34px]">
+              운영 프로그램
+              <br />
+              <span className="bg-linear-to-r from-primary-gradient-start to-primary-gradient-end bg-clip-text text-transparent">
+                포트폴리오
+              </span>
+            </h2>
+          </ScrollReveal>
+          <ScrollReveal delay={0.14}>
+            <p className="max-w-120 text-right text-sm leading-6 font-semibold text-gray-300 max-md:text-left">
+              투자, 교육, 액셀러레이팅, 글로벌 진출까지 창업팀의 성장을 돕는 대표 프로그램입니다.
+            </p>
+          </ScrollReveal>
+        </div>
 
-        <ScrollReveal className="overflow-hidden py-2" delay={0.12}>
-          <motion.div
-            animate={shouldReduceMotion ? { x: 0 } : { x: '-50%' }}
-            className="flex w-max gap-3"
-            transition={{
-              duration: 28,
-              ease: 'linear',
-              repeat: shouldReduceMotion ? 0 : Infinity,
-            }}
-          >
-            {scrollingItems.map((item, index) => (
-              <div aria-hidden={index >= items.length} key={`${item.id}-${index}`}>
-                <ShowcaseCard item={item} />
-              </div>
-            ))}
-          </motion.div>
-        </ScrollReveal>
+        <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {programs.map((program, index) => (
+            <ScrollReveal delay={index * 0.06} key={program.id}>
+              <PortfolioProgramCard program={program} />
+            </ScrollReveal>
+          ))}
+        </div>
       </div>
     </section>
   )

@@ -24,6 +24,9 @@
 - Define Tailwind color tokens as CSS variables in `src/index.css` using `@theme`.
 - Use shared names such as `gray-100`, `primary-100`, `primary`, `secondary-100`, `surface-base`, `surface-muted`, and `text-primary` so colors are available anywhere through Tailwind utilities.
 - The primary brand color must be `#0E51D5` and must be consumed through the `primary` token.
+- Hero gradient emphasis must use `primary-gradient-start` (`#00C6FF`) and `primary-gradient-end` (`#0072FF`) tokens.
+- Bright page sections must use the `section` token (`#F8FAFF`) for their background.
+- Alternating bright sections should use `section-alt` (`#EEF2FF`) to create visual rhythm between adjacent sections.
 - Add new colors as variables first, then consume them through Tailwind classes.
 - Prefer Tailwind transition utilities for simple hover and focus polish.
 - Use `motion/react` for scroll-triggered animation, repeated animation, or complex choreography when it improves maintainability over hand-written observers or ad hoc CSS.
@@ -45,9 +48,20 @@
 
 - Every page and reusable component must be designed for mobile, tablet, and desktop from the first implementation.
 - Header navigation must provide a usable mobile menu below the desktop breakpoint.
+- Header logo may remain as a `LOGO` text placeholder until the final logo asset is provided.
+- Footer logo may also remain as a `LOGO` text placeholder until the final logo asset is provided.
+- Header must be transparent at the top of the home hero and change to a solid black background after scrolling past the hero section.
 - Use Tailwind responsive variants such as `max-md`, `max-lg`, and `lg` instead of separate CSS files.
 - Mobile layouts must avoid horizontal overflow, clipped text, and unreachable interactive controls.
 - Interactive controls must remain keyboard accessible across breakpoints.
+
+## Home Page Direction
+
+- The home page must follow a dark animated hero and bright content-section rhythm inspired by the provided reference.
+- Hero must include floating constellation-style particles, animated light lines, a sparkling down arrow, and scroll-reveal text motion.
+- Use `motion/react` for hero choreography, hover motion, and scroll entrance effects.
+- Main navigation labels must be 회사소개, 팀소개, 투자영역, 포트폴리오, 엑셀러레이팅, 뉴스, 투자 문의.
+- Home page sections must be separated as organisms and repeated cards must be molecules.
 
 ## Formatting
 

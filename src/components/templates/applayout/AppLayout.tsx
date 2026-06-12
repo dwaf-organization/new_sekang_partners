@@ -12,7 +12,6 @@ export function AppLayout({ children }: AppLayoutProps) {
   return (
     <>
       <Header navigationItems={navigationItems} />
-      <div className="h-[86px] max-lg:h-20" aria-hidden="true" />
       {children}
       <Footer />
     </>

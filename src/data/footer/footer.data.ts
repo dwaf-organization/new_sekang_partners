@@ -1,8 +1,8 @@
 import { ROUTES } from '@/router/routes'
 
 export const footerCompanyInfo = [
-  '회사명 | 디와프',
-  '대표자 | 최연호',
+  '회사명 | 가온브릿지',
+  '대표자 | 권오성',
   '사업자등록번호 | 123-45-67890',
   'E-MAIL | dwaf@example.com',
   'TEL | 051-123-4567',

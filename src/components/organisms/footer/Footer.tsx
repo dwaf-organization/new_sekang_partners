@@ -11,9 +11,9 @@ export function Footer() {
           <NavLink
             className="inline-flex rounded-sm focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary"
             to="/"
-            aria-label="세강파트너스 홈으로 이동"
+            aria-label="가온브릿지 홈으로 이동"
           >
-            <img className="w-[186px] max-md:w-[150px]" src={whiteLogo} alt="SEKANG partners" />
+            <img className="h-auto w-[132px] max-md:w-[116px]" src={whiteLogo} alt="가온브릿지" />
           </NavLink>
 
           <div className="mt-11 flex flex-wrap gap-x-2 gap-y-1 text-xs font-semibold text-text-primary/90">
@@ -53,7 +53,7 @@ export function Footer() {
               <circle cx="18" cy="18" r="18" fill="currentColor" />
               <path
                 d="M13.5 9.8c.7-.3 1.5 0 1.9.7l1.4 2.7c.3.6.2 1.3-.3 1.8l-1 1c1.1 2.1 2.8 3.8 4.9 4.9l1-1c.5-.5 1.2-.6 1.8-.3l2.7 1.4c.7.4 1 1.2.7 1.9l-.8 2.2c-.3.8-1 1.3-1.8 1.3C15.9 26.4 9.6 20.1 9.6 12c0-.8.5-1.5 1.3-1.8l2.6-.4Z"
-                fill="#001947"
+                className="fill-footer"
               />
             </svg>
             051-123-4567

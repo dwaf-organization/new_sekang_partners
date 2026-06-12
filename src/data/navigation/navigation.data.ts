@@ -7,5 +7,6 @@ export const navigationItems: NavigationItem[] = [
   { id: 'investment', label: '투자영역', path: ROUTES.INVESTMENT },
   { id: 'portfolio', label: '포트폴리오', path: ROUTES.PORTFOLIO },
   { id: 'accelerating', label: '엑셀러레이팅', path: ROUTES.ACCELERATING },
-  { id: 'education', label: '교육', path: ROUTES.EDUCATION },
+  { id: 'news', label: '뉴스', path: ROUTES.NEWS },
+  { id: 'investment-inquiry', label: '투자 문의', path: ROUTES.INVESTMENT_INQUIRY },
 ]

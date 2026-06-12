@@ -30,11 +30,14 @@
 
 - `HomePage` composes:
   - `HeroSection`
-  - `ServiceOverviewSection`
+  - `AboutFoundrySection`
+  - `InvestmentAreasSection`
   - `PortfolioSection`
-  - `TeamSection`
-  - `EducationSection`
+  - `AcceleratingProgramSection`
+  - `NewsSection`
 - Repeated UI inside those sections is split into:
-  - `ServiceCard`
-  - `MetricItem`
-  - `ShowcaseCard`
+  - `FoundryFeatureCard`
+  - `InvestmentAreaCard`
+  - `PortfolioCompanyCard`
+  - `ProcessStepCard`
+  - `NewsCard`

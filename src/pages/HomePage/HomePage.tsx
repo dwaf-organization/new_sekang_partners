@@ -1,19 +1,29 @@
-import { EducationSection } from '@/components/organisms/educationsection/EducationSection'
+import { AboutFoundrySection } from '@/components/organisms/aboutfoundrysection/AboutFoundrySection'
+import { ClientSection } from '@/components/organisms/clientsection/ClientSection'
 import { HeroSection } from '@/components/organisms/herosection/HeroSection'
+import { InvestmentAreasSection } from '@/components/organisms/investmentareassection/InvestmentAreasSection'
+import { NewsSection } from '@/components/organisms/newssection/NewsSection'
 import { PortfolioSection } from '@/components/organisms/portfoliosection/PortfolioSection'
-import { ServiceOverviewSection } from '@/components/organisms/serviceoverviewsection/ServiceOverviewSection'
-// import { TeamSection } from '@/components/organisms/teamsection/TeamSection'
 
-import { homeHero, homeMetrics, portfolioItems, serviceCards } from '@/data/home.data'
+import {
+  clientLogos,
+  foundryFeatures,
+  heroStats,
+  homeHero,
+  investmentAreas,
+  newsItems,
+  portfolioPrograms,
+} from '@/data/home.data'
 
 export function HomePage() {
   return (
     <main id="home" className="min-h-svh overflow-hidden bg-white font-primary text-text-inverse">
-      <HeroSection hero={homeHero} />
-      <ServiceOverviewSection metrics={homeMetrics} serviceCards={serviceCards} />
-      <PortfolioSection items={portfolioItems} />
-      {/* <TeamSection members={teamMembers} /> */}
-      <EducationSection items={portfolioItems} />
+      <HeroSection hero={homeHero} stats={heroStats} />
+      <AboutFoundrySection features={foundryFeatures} />
+      <InvestmentAreasSection areas={investmentAreas} />
+      <PortfolioSection programs={portfolioPrograms} />
+      <NewsSection items={newsItems} />
+      <ClientSection clients={clientLogos} />
     </main>
   )
 }
