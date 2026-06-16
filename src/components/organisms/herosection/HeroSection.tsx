@@ -87,8 +87,8 @@ export function HeroSection({ hero, stats }: HeroSectionProps) {
       />
       <div className="absolute inset-0 bg-linear-to-b from-surface-base/80 via-surface-muted/80 to-surface-base/95" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_45%,rgba(14,81,213,0.34),transparent_30%),radial-gradient(circle_at_20%_80%,rgba(120,43,255,0.18),transparent_26%)]" />
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,var(--color-hero-grid)_1px,transparent_1px),linear-gradient(to_bottom,var(--color-hero-grid)_1px,transparent_1px)] bg-[size:72px_72px] opacity-35 [mask-image:radial-gradient(circle_at_50%_42%,black,transparent_72%)]" />
-      <div className="absolute inset-0 bg-[linear-gradient(120deg,transparent_0%,var(--color-hero-grid)_48%,transparent_58%)] opacity-20 [mask-image:linear-gradient(to_bottom,transparent,black_18%,black_70%,transparent)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,var(--color-hero-grid)_1px,transparent_1px),linear-gradient(to_bottom,var(--color-hero-grid)_1px,transparent_1px)] bg-size-[72px_72px] opacity-35 [mask-[radial-gradient(circle_at_50%_42%,black,transparent_72%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(120deg,transparent_0%,var(--color-hero-grid)_48%,transparent_58%)] opacity-20 mask-[linear-gradient(to_bottom,transparent,black_18%,black_70%,transparent)]" />
       <HeroParticleCanvas disabled={Boolean(shouldReduceMotion)} />
 
       {constellationLines.map((line) => (
@@ -195,7 +195,7 @@ export function HeroSection({ hero, stats }: HeroSectionProps) {
         transition={{ duration: 16, repeat: Infinity, ease: 'linear' }}
       />
 
-      <div className="relative z-10 mx-auto flex min-h-svh w-full max-w-[1440px] flex-col items-center justify-center px-8 pt-28 pb-16 text-center max-md:px-5">
+      <div className="relative z-10 mx-auto flex min-h-svh w-full max-w-360 flex-col items-center justify-center px-8 pt-28 pb-16 text-center max-md:px-5">
         <ScrollReveal y={28}>
           <p className="inline-flex items-center gap-2 rounded-full border border-primary-gradient-start/35 bg-linear-to-r from-primary-gradient-start/10 to-primary-gradient-end/10 px-5 py-2 text-sm font-black backdrop-blur">
             <span className="h-1.5 w-1.5 rounded-full bg-primary-gradient-start shadow-[rgba(0,198,255,0.9)_0px_0px_14px_3px]" />
@@ -245,7 +245,7 @@ export function HeroSection({ hero, stats }: HeroSectionProps) {
         </ScrollReveal>
 
         <ScrollReveal delay={0.42} y={26}>
-          <dl className="mt-12 grid grid-cols-3 gap-10 max-sm:gap-5">
+          <dl className="mt-12 grid grid-cols-2 gap-10 max-sm:gap-5">
             {stats.map((stat) => (
               <div key={stat.id}>
                 <dt className="text-xs font-bold text-text-primary/50">{stat.label}</dt>

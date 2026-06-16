@@ -30,7 +30,6 @@ export const ceoGreeting: CeoGreeting = {
 
 export const aboutStats: AboutStat[] = [
   { id: 'portfolio', label: '포트폴리오사', value: '50+' },
-  { id: 'fund', label: '운용자산', value: '₩1,700억+' },
   { id: 'founders', label: '배출 창업가', value: '200+' },
   { id: 'network', label: '글로벌 네트워크', value: '12개국' },
 ]

@@ -10,7 +10,7 @@ type AboutFoundrySectionProps = {
 export function AboutFoundrySection({ features }: AboutFoundrySectionProps) {
   return (
     <section className="px-8 py-28 text-text-inverse max-md:px-5 max-md:py-20">
-      <div className="mx-auto max-w-[1440px]">
+      <div className="mx-auto max-w-360">
         <div className="grid items-center gap-16 lg:grid-cols-[1fr_0.95fr]">
           <div>
             <ScrollReveal>
@@ -51,10 +51,6 @@ export function AboutFoundrySection({ features }: AboutFoundrySectionProps) {
                   <dt className="text-xs font-bold text-gray-300">포트폴리오</dt>
                   <dd className="mt-2 text-2xl font-black text-primary">50+</dd>
                 </div>
-                <div>
-                  <dt className="text-xs font-bold text-gray-300">누적 기업가치</dt>
-                  <dd className="mt-2 text-2xl font-black text-primary">1T+</dd>
-                </div>
               </dl>
             </ScrollReveal>
           </div>
@@ -62,7 +58,7 @@ export function AboutFoundrySection({ features }: AboutFoundrySectionProps) {
           <ScrollReveal delay={0.16} className="relative">
             <div className="overflow-hidden border border-primary-200 bg-surface-muted shadow-[rgba(14,81,213,0.18)_0px_18px_50px_0px]">
               <img
-                className="h-[420px] w-full object-cover opacity-90 transition duration-700 hover:scale-105 max-md:h-[280px]"
+                className="h-105 w-full object-cover opacity-90 transition duration-700 hover:scale-105 max-md:h-70"
                 src={globalBornImage}
                 alt=""
               />

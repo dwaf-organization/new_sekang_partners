@@ -11,12 +11,12 @@ type CeoGreetingSectionProps = {
 export function CeoGreetingSection({ greeting, stats }: CeoGreetingSectionProps) {
   return (
     <section className="bg-section px-8 py-28 text-text-inverse max-md:px-5 max-md:py-20">
-      <div className="mx-auto grid max-w-[1160px] gap-18 lg:grid-cols-[0.95fr_1fr] lg:items-start">
+      <div className="mx-auto grid max-w-290 gap-18 lg:grid-cols-[0.95fr_1fr] lg:items-start">
         <ScrollReveal>
           <figure>
             <div className="overflow-hidden shadow-[rgba(14,81,213,0.12)_0px_22px_60px_0px]">
               <img
-                className="h-[680px] w-full object-cover transition duration-700 hover:scale-105 max-md:h-[430px]"
+                className="h-170 w-full object-cover transition duration-700 hover:scale-105 max-md:h-107.5"
                 src={ceoImage}
                 alt="가온브릿지 대표 권오성"
               />

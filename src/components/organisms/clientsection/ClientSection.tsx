@@ -14,7 +14,7 @@ export function ClientSection({ clients }: ClientSectionProps) {
 
   return (
     <section className="px-8 py-24 text-text-inverse max-md:px-5 max-md:py-20">
-      <div className="mx-auto max-w-[1440px]">
+      <div className="mx-auto max-w-360">
         <ScrollReveal>
           <p className="text-xs font-black tracking-[0.28em] text-primary uppercase">Clients</p>
         </ScrollReveal>

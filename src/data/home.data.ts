@@ -48,7 +48,6 @@ export const homeHero: HomeHero = {
 
 export const heroStats: HeroStat[] = [
   { id: 'portfolio', label: '포트폴리오', value: '50+' },
-  { id: 'fund', label: '누적 투자 규모', value: '₩300억+' },
   { id: 'teams', label: '함께한 스타트업', value: '200+' },
 ]
 
@@ -188,19 +187,19 @@ export const clientLogos: ClientLogo[] = [
 
 export const portfolioPrograms: PortfolioProgram[] = [
   {
-    id: 'investment-foundry',
+    id: 'my-startup-challenge',
     imageUrl: portfolio1,
-    programName: '밸류파인더 투자 프로그램',
+    programName: 'My Startup Challenge',
   },
   {
-    id: 'accelerating',
+    id: 'ai-secretary',
     imageUrl: portfolio2,
-    programName: 'AI 액셀러레이팅 프로그램',
+    programName: '김부장 AI 비서',
   },
   {
-    id: 'education',
+    id: 'grant-ai-pro',
     imageUrl: portfolio3,
-    programName: '실전 창업 교육',
+    programName: '지원금AI PRO',
   },
 ]
 

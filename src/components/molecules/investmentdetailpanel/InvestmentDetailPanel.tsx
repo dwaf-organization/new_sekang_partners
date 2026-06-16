@@ -40,9 +40,9 @@ export function InvestmentDetailPanel({ area }: InvestmentDetailPanelProps) {
 
           <div>
             <div className="flex items-center gap-4">
-              <span className={`rounded-full border px-3 py-1 text-xs font-black ${tone}`}>
+              {/* <span className={`rounded-full border px-3 py-1 text-xs font-black ${tone}`}>
                 {area.category}
-              </span>
+              </span> */}
               <p className="text-2xl font-black text-text-inverse">{area.title}</p>
             </div>
             <p className="mt-5 text-lg leading-8 font-semibold text-gray-600">{area.description}</p>
@@ -58,7 +58,7 @@ export function InvestmentDetailPanel({ area }: InvestmentDetailPanelProps) {
             </div>
           </div>
 
-          <div className="flex flex-col justify-center border-l border-gray-200 pl-10 max-lg:col-span-2 max-lg:flex-row max-lg:justify-start max-lg:gap-12 max-lg:border-l-0 max-lg:border-t max-lg:pt-8 max-lg:pl-0 max-md:col-span-1 max-md:flex-col max-md:gap-6">
+          {/* <div className="flex flex-col justify-center border-l border-gray-200 pl-10 max-lg:col-span-2 max-lg:flex-row max-lg:justify-start max-lg:gap-12 max-lg:border-l-0 max-lg:border-t max-lg:pt-8 max-lg:pl-0 max-md:col-span-1 max-md:flex-col max-md:gap-6">
             <div>
               <p className={`text-4xl font-black ${tone}`}>{area.companies}</p>
               <p className="mt-2 text-sm font-bold text-gray-500">투자사</p>
@@ -67,7 +67,7 @@ export function InvestmentDetailPanel({ area }: InvestmentDetailPanelProps) {
               <p className={`text-4xl font-black ${tone}`}>{area.stage}</p>
               <p className="mt-2 text-sm font-bold text-gray-500">평균 투자 단계</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </motion.article>
     </AnimatePresence>

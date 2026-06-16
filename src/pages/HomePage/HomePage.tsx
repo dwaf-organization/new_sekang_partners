@@ -11,9 +11,9 @@ import {
   heroStats,
   homeHero,
   investmentAreas,
-  newsItems,
   portfolioPrograms,
 } from '@/data/home.data'
+import { newsGalleryItems } from '@/data/news.data'
 
 export function HomePage() {
   return (
@@ -22,7 +22,7 @@ export function HomePage() {
       <AboutFoundrySection features={foundryFeatures} />
       <InvestmentAreasSection areas={investmentAreas} />
       <PortfolioSection programs={portfolioPrograms} />
-      <NewsSection items={newsItems} />
+      <NewsSection items={newsGalleryItems} />
       <ClientSection clients={clientLogos} />
     </main>
   )
