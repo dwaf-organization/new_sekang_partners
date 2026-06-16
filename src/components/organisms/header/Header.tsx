@@ -18,6 +18,7 @@ export function Header({ navigationItems }: HeaderProps) {
   )
   const primaryNavigationItems = navigationItems.filter((item) => item.id !== 'investment-inquiry')
   const isHomePage = pathname === ROUTES.HOME
+  const isInvestmentInquiryPage = pathname === ROUTES.INVESTMENT_INQUIRY
 
   useEffect(() => {
     const updateHeaderState = () => {
@@ -38,7 +39,7 @@ export function Header({ navigationItems }: HeaderProps) {
     }
   }, [pathname])
 
-  const hasSolidBackground = isScrolledPastHero || isMenuOpen
+  const hasSolidBackground = isScrolledPastHero || isMenuOpen || isInvestmentInquiryPage
   const isLightHeader = hasSolidBackground && !isHomePage
   const logoImage = isLightHeader ? colorLogo : whiteLogo
 
